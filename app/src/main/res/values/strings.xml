@@ -14,8 +14,13 @@
     <string name="menu_about">About</string>
     <string name="bienvenue_sur_l_application_erwando">Bienvenue sur l application ErwAndo !</string>
 
+    <string name="MAPS_API_KEY">AIzaSyBqxe6PwSTTIeEhEVsYSO7mWq8zj8X0EqE</string>
+
     <!-- Ajouts pour la page À propos -->
     <string name="about_title">À propos de ErwAndo</string>
     <string name="about_description">Explorez le grand air avec ErwAndo, l application ultime pour les amateurs de randonnée. Découvrez des cartes détaillées, localisez les points de randonnée avec des coordonnées précises, et planifiez votre prochaine aventure en toute simplicité. Que vous cherchiez une promenade paisible ou un sentier exigeant, ErwAndo est votre compagnon de confiance pour une expérience de randonnée enrichissante et sécuritaire.</string>
     <string name="about_image_desc">Logo de l application ErwAndo</string>
+    <string name="enter_source_location" />
+    <string name="open_navigation" />
+    <string name="enter_destination_location" />
 </resources>

@@ -1,16 +1,16 @@
-package com.example.projetandroiderwando.ui.gallery;
+package com.example.projetandroiderwando.ui.itinerary;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class ItineraryViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public ItineraryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is itinerary fragment");
     }
 
     public LiveData<String> getText() {

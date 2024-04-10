@@ -12,14 +12,24 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.projetandroiderwando.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_map"
+        android:name="com.example.projetandroiderwando.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.projetandroiderwando.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_list"
+        android:name="com.example.projetandroiderwando.ui.list.ListFragment"
+        android:label="@string/menu_list"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/nav_itinerary"
+        android:name="com.example.projetandroiderwando.ui.itinerary.ItineraryFragment"
+        android:label="@string/menu_itinerary"
+        tools:layout="@layout/fragment_itinerary" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.projetandroiderwando.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

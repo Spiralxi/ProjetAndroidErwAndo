@@ -1,0 +1,25 @@
+{
+  "parcours": [
+    {
+      "latLng": {
+        "latitude": -33.752,
+        "longitude": 151.211
+      },
+      "ville": "Londres"
+    },
+    {
+      "latLng": {
+        "latitude": -33.852,
+        "longitude": 151.211
+      },
+      "ville": "Sydney"
+    },
+    {
+      "latLng": {
+        "latitude": -30.852,
+        "longitude": 151.211
+      },
+      "ville": "New York"
+    }
+  ]
+}

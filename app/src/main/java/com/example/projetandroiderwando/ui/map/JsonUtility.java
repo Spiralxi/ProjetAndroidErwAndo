@@ -5,27 +5,37 @@ import android.content.Context;
 import com.example.projetandroiderwando.R;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 public class JsonUtility {
     public static List<Parcours> readJsonFromRaw(Context context) {
-        ObjectMapper objectMapper = new ObjectMapper();
+        List<Parcours> parcoursList = new ArrayList<>();
+
         try {
-            InputStream inputStream = context.getResources().openRawResource(R.raw.nom_du_fichier_json);
+            InputStream is = context.getResources().openRawResource(R.raw.data);
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            StringBuilder jsonStringBuilder = new StringBuilder();
+            String line;
+            while ((line = br.readLine()) != null) {
+                jsonStringBuilder.append(line);
+            }
+            br.close();
 
-            List<Parcours> parcoursList = objectMapper.readValue(inputStream, new TypeReference<List<Parcours>>() {});
-            inputStream.close();
-
-            return parcoursList;
+            Gson gson = new Gson();
+            ParcoursData parcoursData = gson.fromJson(jsonStringBuilder.toString(), ParcoursData.class);
+            parcoursList = parcoursData.getParcours();
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
+
+        return parcoursList;
     }
 }

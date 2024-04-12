@@ -24,7 +24,7 @@ public class ItineraryFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.activity_main, container, false);
+        View root = inflater.inflate(R.layout.fragment_itinerary, container, false);
 
         EditText editTextSource = root.findViewById(R.id.source);
         EditText editTextDestination = root.findViewById(R.id.destination);

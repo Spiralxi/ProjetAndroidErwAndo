@@ -38,25 +38,18 @@ public class MapFragment extends Fragment implements OnMapReadyCallback  {
             mapFragment.getMapAsync(new OnMapReadyCallback() {
                 @Override
                 public void onMapReady(GoogleMap googleMap) {
-                    List<Parcours> parcours = new ArrayList<>();
-                    parcours.add(new Parcours(new LatLng(-33.852, 151.211), "Sydney"));
-                    parcours.add(new Parcours(new LatLng(-33.852, 151.211), "Sydney"));
-                    parcours.add(new Parcours(new LatLng(-33.852, 151.211), "Sydney"));
-
                     List<Parcours> parcoursList = JsonUtility.readJsonFromRaw(requireContext());
                     if (parcoursList != null) {
-                        for (Parcours itineraire: parcoursList) {
-                            // Faites quelque chose avec chaque objet Parcours
-                        }
+                        parcoursList.forEach(itineraire -> {
+                            googleMap.moveCamera(newLatLng(itineraire.getLatLng()));
+                            MarkerOptions options = new MarkerOptions()
+                                    .position(itineraire.getLatLng())
+                                    .title(itineraire.getVille())
+                                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                            googleMap.addMarker(options);
+                        });
                     }
-                    parcours.forEach(itineraire -> {
-                        googleMap.moveCamera(newLatLng(itineraire.getLatLng()));
-                        MarkerOptions options = new MarkerOptions()
-                                .position(itineraire.getLatLng())
-                                .title(itineraire.getVille())
-                                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-                        googleMap.addMarker(options);
-                    });
+
                 }
             });
         }

@@ -43,7 +43,9 @@ dependencies {
     implementation libs.google.maps.services
     implementation libs.play.services.maps
     implementation libs.fragment
-
+    implementation libs.jackson.core
+    implementation libs.jackson.databind
+    implementation libs.jackson.annotations
 
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit

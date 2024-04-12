@@ -6,6 +6,9 @@ public class Parcours {
     private LatLng latLng;
     private String ville;
 
+    public Parcours() {
+    }
+
     public Parcours(LatLng latLng, String ville) {
         this.latLng =latLng;
         this.ville = ville;

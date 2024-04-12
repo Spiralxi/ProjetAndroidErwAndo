@@ -21,6 +21,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback  {
 
@@ -42,6 +43,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback  {
                     parcours.add(new Parcours(new LatLng(-33.852, 151.211), "Sydney"));
                     parcours.add(new Parcours(new LatLng(-33.852, 151.211), "Sydney"));
 
+                    List<Parcours> parcoursList = JsonUtility.readJsonFromRaw(requireContext());
+                    if (parcoursList != null) {
+                        for (Parcours itineraire: parcoursList) {
+                            // Faites quelque chose avec chaque objet Parcours
+                        }
+                    }
                     parcours.forEach(itineraire -> {
                         googleMap.moveCamera(newLatLng(itineraire.getLatLng()));
                         MarkerOptions options = new MarkerOptions()

@@ -5,7 +5,8 @@
         "latitude": -33.752,
         "longitude": 151.211
       },
-      "ville": "Londres"
+      "ville": "Londres",
+      "id": 1
     },
     {
       "latLng": {

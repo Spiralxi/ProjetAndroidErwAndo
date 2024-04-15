@@ -20,7 +20,7 @@ public class JsonUtility {
         List<Parcours> parcoursList = new ArrayList<>();
 
         try {
-            InputStream is = context.getResources().openRawResource(R.raw.data);
+            InputStream is = context.getResources().openRawResource(R.raw.datajson);
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             StringBuilder jsonStringBuilder = new StringBuilder();
             String line;

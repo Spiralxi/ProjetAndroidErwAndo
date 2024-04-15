@@ -1,0 +1,61 @@
+{
+  "parcours": [
+    {
+      "latLng": {
+        "latitude": 43.210,
+        "longitude": 5.419
+      },
+      "ville": "Marseille",
+      "name": "Calanque de Sormiou",
+      "filename": "calanque_sormiou",
+      "auteur": "Par Jean Dupont — Travail personnel, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=12345678",
+      "region": "PACA",
+      "accessibilite": "Moyen",
+      "distance": 3.5,
+      "denivele": 250,
+      "duree": "2 heures",
+      "point_haut": 120,
+      "point_bas": 10,
+      "description": "Randonnée pittoresque offrant des vues spectaculaires sur la mer Méditerranée et un accès à la célèbre plage de Sormiou.",
+      "conseils": "Apporter de l'eau, des chaussures de randonnée et un chapeau. Accès restreint pendant la période estivale en raison du risque d'incendie."
+    },
+    {
+      "latLng": {
+        "latitude": 46.392,
+        "longitude": 7.118
+      },
+      "ville": "Les Mosses",
+      "name": "Randonnée Lac Lioson et Pic Chaussy",
+      "filename": "lioson_chaussy",
+      "auteur": "Par Marie Leroux — Travail personnel, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=98765432",
+      "region": "Vaud",
+      "accessibilite": "Modéré",
+      "distance": 12,
+      "denivele": 700,
+      "duree": "5 heures",
+      "point_haut": 2351,
+      "point_bas": 1850,
+      "description": "Cette randonnée offre des vues magnifiques sur le Lac Lioson et le sommet du Pic Chaussy, traversant des paysages alpins pittoresques et des prairies fleuries.",
+      "conseils": "Prévoir des vêtements adaptés à la montagne et vérifier les prévisions météorologiques. La randonnée est mieux pratiquée de juin à septembre."
+    },
+    {
+      "latLng": {
+        "latitude": 42.649,
+        "longitude": 0.061
+      },
+      "ville": "Torla-Ordesa",
+      "name": "Randonnée La Faja de Pelay",
+      "filename": "faja_de_pelay",
+      "auteur": "Par Carlos Hernandez — Travail personnel, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=98765432",
+      "region": "Aragon",
+      "accessibilite": "Difficile",
+      "distance": 16,
+      "denivele": 800,
+      "duree": "6 à 8 heures",
+      "point_haut": 2000,
+      "point_bas": 1200,
+      "description": "La Faja de Pelay est une randonnée exigeante qui traverse des terrains escarpés dans le Parc National d'Ordesa. Elle offre des vues époustouflantes sur les falaises et les vallées profondes, idéale pour les randonneurs expérimentés à la recherche de défis.",
+      "conseils": "Il est essentiel d'être bien préparé avec de l'équipement adapté pour les terrains difficiles, de l'eau suffisante, et de bonnes provisions. Vérifier les conditions météorologiques avant de partir, surtout en dehors de la saison estivale."
+    }
+  ]
+}

@@ -11,7 +11,7 @@ public class Parcours {
     private String nom;
     private String region;
     private Double distance;
-    private Integer duree;
+    private String duree;
 
     private Integer denivele;
 
@@ -19,7 +19,7 @@ public class Parcours {
     public Parcours() {
     }
 
-    public Parcours(LatLng latLng, String ville, String nom, String region, Double distance, Integer duree, Integer denivele) {
+    public Parcours(LatLng latLng, String ville, String nom, String region, Double distance, String duree, Integer denivele) {
         this.latLng = latLng;
         this.ville = ville;
         this.nom = nom;
@@ -53,11 +53,11 @@ public class Parcours {
         this.distance = distance;
     }
 
-    public Integer getDuree() {
+    public String getDuree() {
         return duree;
     }
 
-    public void setDuree(Integer duree) {
+    public void setDuree(String duree) {
         this.duree = duree;
     }
 

@@ -68,7 +68,7 @@ public class ParcoursAdapter  extends ArrayAdapter<Parcours> {
         distanceTextView.setText("Distance: " + currentParcours.getDistance() + " km");
 
         TextView dureeTextView = listItem.findViewById(R.id.text_duree);
-        dureeTextView.setText("Durée: " + currentParcours.getDuree() + " heures");
+        dureeTextView.setText("Durée: " + currentParcours.getDuree());
 
         TextView deniveleTextView = listItem.findViewById(R.id.text_denivele);
         deniveleTextView.setText("Dénivelé: " + currentParcours.getDenivele() + " m");

@@ -38,16 +38,20 @@ public class MapFragment extends Fragment implements OnMapReadyCallback  {
             mapFragment.getMapAsync(new OnMapReadyCallback() {
                 @Override
                 public void onMapReady(GoogleMap googleMap) {
-                    List<Parcours> parcoursList = JsonUtility.readJsonFromRaw(requireContext());
-                    if (parcoursList != null) {
-                        parcoursList.forEach(itineraire -> {
-                            googleMap.moveCamera(newLatLng(itineraire.getLatLng()));
-                            MarkerOptions options = new MarkerOptions()
-                                    .position(itineraire.getLatLng())
-                                    .title(itineraire.getVille())
-                                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-                            googleMap.addMarker(options);
-                        });
+                    try {
+                        List<Parcours> parcoursList = JsonUtility.readJsonFromRaw(requireContext());
+                        if (parcoursList != null) {
+                            parcoursList.forEach(itineraire -> {
+                                googleMap.moveCamera(newLatLng(itineraire.getLatLng()));
+                                MarkerOptions options = new MarkerOptions()
+                                        .position(itineraire.getLatLng())
+                                        .title(itineraire.getVille())
+                                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                                googleMap.addMarker(options);
+                            });
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
 
                 }
